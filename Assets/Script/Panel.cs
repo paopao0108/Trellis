@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Panel : MonoBehaviour
 {
-    private List<List<Cell>> grids = new List<List<Cell>>();
+    private List<List<GridCell>> grids = new List<List<GridCell>>();
 
     public int row;
     public int col;
-    public Cell grid;
-    public GridCell gridcell;
+    public GridCell grid;
 
     private void Awake()
     {
@@ -29,7 +28,7 @@ public class Panel : MonoBehaviour
     {
         for (int i = 0; i < row; i++)
         {
-            grids.Add(new List<Cell>());
+            grids.Add(new List<GridCell>());
             for (int j = 0; j < col; j++)
                 grids[i].Add(Instantiate(grid, this.transform));
         }
