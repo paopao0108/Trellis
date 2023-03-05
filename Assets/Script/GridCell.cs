@@ -5,10 +5,24 @@ using UnityEngine.UI;
 
 public class GridCell : MonoBehaviour
 {
-    private Image gridImage;
+    private Vector3 zeroPos; // 网格面板原点位置
+    private bool outPos; // 最外层的位置
+    private bool middlePos; // 中间层的位置
+    private bool innerPos; // 最内层的位置
+
+    public Transform zeroPoint;
+
+    public static float CellSize;
+
+    private void Awake()
+    {
+        zeroPoint = GameObject.Find("zeroPoint").transform;
+        zeroPos = zeroPoint.position; // 获取原点位置
+    }
+
     void Start()
     {
-        gridImage = GetComponent<Image>();
+        
     }
 
     // Update is called once per frame
@@ -17,17 +31,31 @@ public class GridCell : MonoBehaviour
         
     }
 
-    public void Highlight()
+    // 获取格子在网格中的位置
+    public Vector3 GetPostion()
     {
-        //StopAllCoroutines();
-        gridImage.color = Constant.gridHighlight;
-        StartCoroutine("ChangeColor");
+        return this.transform.position - zeroPos;
     }
 
-    IEnumerator ChangeColor()
+    // 能否放置棋子
+    public bool IsExistSpace()
     {
-        yield return new WaitForSeconds(1);
-        //yield return null;
-        gridImage.color = Constant.gridColor;
+        return true;
+    }
+
+    public void HighLight()
+    {
+
+    }
+
+
+    public void Highlight()
+    {
+        this.GetComponent<Image>().color = Constant.gridHighlight;
+    }
+
+    public void Ordinarylight()
+    {
+        this.GetComponent<Image>().color = Constant.gridColor;
     }
 }
