@@ -11,7 +11,7 @@ public class Circle : MonoBehaviour
     }
     private float size;
 
-    public int count; // 可使用的数量,，默认为3个
+    public int count = 3; // 可使用的数量,，默认为3个
     public bool isDrag = true;
 
     void Start()

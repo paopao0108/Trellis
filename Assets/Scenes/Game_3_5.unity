@@ -380,10 +380,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec1f010981095c74389dabd23848dd70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LargeCircle: {fileID: 7621861702463736476, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
   zeroPoint: {fileID: 1012449599}
-  grid: {fileID: 1505347547597557451, guid: bd5d6c1ebf6005c43b3d2537e2402986, type: 3}
   gamePanel: {fileID: 15208865}
+  curCircle: {fileID: 1254517988831947659}
+  circleCount: 3
 --- !u!1 &254594801
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,6 +847,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160564629}
   m_CullTransparentMesh: 1
+--- !u!1 &1620232908 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5555760430834384740, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
+  m_PrefabInstance: {fileID: 1254517988831947655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1700143402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,11 +1156,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7621861702463736476, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7621861702463736476, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7621861702463736476, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
       propertyPath: m_RootOrder
@@ -1215,11 +1220,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7621861702463736476, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -80.585
+      value: -136.72964
       objectReference: {fileID: 0}
     - target: {fileID: 7621861702463736476, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0010233
+      value: -57.889008
       objectReference: {fileID: 0}
     - target: {fileID: 7621861702463736476, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1240,6 +1245,20 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7621861702463736476, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
   m_PrefabInstance: {fileID: 1254517988831947655}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1254517988831947659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620232908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ce5b5c95b346a4ea5b7c2d941e619f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 0
+  isDrag: 1
 --- !u!1001 &1933824074048189852
 PrefabInstance:
   m_ObjectHideFlags: 0
