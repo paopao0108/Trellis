@@ -5,14 +5,12 @@ using UnityEngine.UI;
 
 public class Circle : MonoBehaviour
 {
-    public enum Color {
-        Blue,
-        Red
-    }
-    private float size;
+    
+
+    //private float size;
 
     public int count = 3; // 可使用的数量,，默认为3个
-    public bool isDrag = true;
+    //public bool isDrag = true;
 
     void Start()
     {
