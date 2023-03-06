@@ -297,6 +297,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueCircle (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5555760430834384740, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555760430834384740, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
+      propertyPath: m_TagString
+      value: S
+      objectReference: {fileID: 0}
     - target: {fileID: 7621861702463736476, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -480,7 +488,6 @@ MonoBehaviour:
   zeroPoint: {fileID: 1012449599}
   gamePanel: {fileID: 15208865}
   chessPanel: {fileID: 1700143406}
-  circleCount: 3
 --- !u!1 &97470460 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5555760430834384740, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
@@ -503,6 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ce5b5c95b346a4ea5b7c2d941e619f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  size: 0
   count: 3
 --- !u!1 &254594801
 GameObject:
@@ -978,6 +986,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueCircle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5555760430834384740, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555760430834384740, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
+      propertyPath: m_TagString
+      value: M
+      objectReference: {fileID: 0}
     - target: {fileID: 7621861702463736476, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1086,6 +1102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ce5b5c95b346a4ea5b7c2d941e619f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  size: 0
   count: 3
 --- !u!1 &1620232908 stripped
 GameObject:
@@ -1188,7 +1205,6 @@ MonoBehaviour:
   lCircle: {fileID: 1254517988831947659}
   mCircle: {fileID: 97470462}
   sCircle: {fileID: 1617339493}
-  circle: {fileID: 0}
 --- !u!1 &1782035307 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1856518991882406110, guid: 9c84b1af755b7c8478563870dfdf1e06, type: 3}
@@ -1413,6 +1429,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueCircle
       objectReference: {fileID: 0}
+    - target: {fileID: 5555760430834384740, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555760430834384740, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
+      propertyPath: m_TagString
+      value: L
+      objectReference: {fileID: 0}
     - target: {fileID: 7621861702463736476, guid: 5c1165a0f6ecc2842b3825f293d63734, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1516,6 +1540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ce5b5c95b346a4ea5b7c2d941e619f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  size: 0
   count: 3
 --- !u!1001 &1933824074048189852
 PrefabInstance:
